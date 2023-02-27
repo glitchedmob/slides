@@ -26,6 +26,7 @@ export const useReveal = () => {
             progress: true,
             center: true,
             embedded: true,
+            controlsTutorial: false,
         });
 
         reveal.value = revealInstance;
@@ -41,3 +42,9 @@ export const useReveal = () => {
 
     return { reveal, onReady, initialize, destroy };
 };
+
+if (import.meta.hot) {
+    import.meta.hot.on('vite:afterUpdate', () => {
+        reveal.value?.sync();
+    });
+}

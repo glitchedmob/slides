@@ -70,4 +70,13 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
             </ul>
         </div>
     </SlideTypeTwo>
+
+    <SlideTypeTwo>
+        <h4>It Does All of This While Using the Same:</h4>
+        <ul class="fragment">
+            <li>Programming languages</li>
+            <li>Libraries</li>
+            <li>Tools and techniques</li>
+        </ul>
+    </SlideTypeTwo>
 </template>
