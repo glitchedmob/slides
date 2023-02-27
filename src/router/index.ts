@@ -10,5 +10,10 @@ export const router = createRouter({
             name: 'home',
             component: HomePage,
         },
+        {
+            path: '/dotnet-and-why-you-should-care',
+            name: 'DotNetAndWhyYouShouldCare',
+            component: () => import('@/presentations/DotNetAndWhyYouShouldCare.vue'),
+        },
     ],
 });
