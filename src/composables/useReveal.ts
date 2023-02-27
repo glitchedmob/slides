@@ -1,4 +1,4 @@
-import { onMounted, onUnmounted, ref } from 'vue';
+import { ref } from 'vue';
 import Reveal from 'reveal.js';
 
 type RevealOnReadyCallback = (reveal: Reveal.Api) => void | Promise<void>;

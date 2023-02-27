@@ -12,6 +12,5 @@ defineProps({
 <template>
     <section :data-slide-type="slideTypes.title">
         <h1>{{ title }}</h1>
-        <p>By Levi Zitting</p>
     </section>
 </template>

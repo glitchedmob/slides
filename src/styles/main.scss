@@ -2,19 +2,10 @@
 @import '../../node_modules/reveal.js/dist/theme/black.css';
 
 @import 'base/reset';
-
-:root {
-    --background-color: #05172F;
-    --main-font: 'Roboto', sans-serif;
-    --r-link-color: #58A3F2;
-}
+@import 'base/utils';
+@import 'reveal-theme';
 
 .reveal {
-    font-family: var(--main-font);
     width: 100vw;
     height: 100vh;
-}
-
-.reveal-viewport {
-    background: var(--background-color);
 }

@@ -5,7 +5,7 @@ import { useTitle } from '@/composables/useTitle';
 import PresentationWrapper from '@/components/PresentationWrapper.vue';
 import TitleSlide from '@/components/TitleSlide.vue';
 import WhatIsDotNetSlide from '@/presentations/slides/WhatIsDotNetSlide.vue';
-import WhatCanYouDoWithIt from '@/presentations/slides/WhatCanYouDoWithIt.vue';
+import WhatCanYouDoWithItSlide from '@/presentations/slides/WhatCanYouDoWithItSlide.vue';
 
 const { initialize, destroy } = useReveal();
 
@@ -24,7 +24,7 @@ onUnmounted(() => {
     <PresentationWrapper>
         <TitleSlide title=".NET and Why You Should Care" />
         <WhatIsDotNetSlide />
-        <WhatCanYouDoWithIt />
+        <WhatCanYouDoWithItSlide />
         <section>
             <h3>Hello Slide 3</h3>
         </section>
