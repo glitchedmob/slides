@@ -13,7 +13,7 @@ export const router = createRouter({
         {
             path: '/dotnet-and-why-you-should-care',
             name: 'DotNetAndWhyYouShouldCare',
-            component: () => import('@/presentations/DotNetAndWhyYouShouldCare.vue'),
+            component: () => import('@/presentations/DotNetAndWhyYouShouldCare/DotNetAndWhyYouShouldCare.vue'),
         },
     ],
 });

@@ -1,0 +1,51 @@
+<script setup lang="ts">
+import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
+</script>
+<template>
+    <SlideTypeTwo>
+        <h3>Programming Languages</h3>
+        <ul class="fragment">
+            <li>C#</li>
+            <li>F#</li>
+            <li>Visual Basic</li>
+        </ul>
+    </SlideTypeTwo>
+
+    <SlideTypeTwo>
+        <div class="r-grid">
+            <div class="r-col">
+                <h3>The Compiler</h3>
+                <ul class="fragment" data-fragment-index="1">
+                    <li>Code Analysis</li>
+                    <li>Language Server</li>
+                    <li>Refactoring</li>
+                    <li>Formatting</li>
+                    <li class="fragment">And of course, compiling</li>
+                </ul>
+            </div>
+            <div class="r-col fragment" data-fragment-index="1">
+                <img
+                    src="https://user-images.githubusercontent.com/46729679/109719841-17b7dd00-7b5e-11eb-8f5e-87eb2d4d1be9.png"
+                    alt="Roslyn compiler logo"
+                />
+            </div>
+        </div>
+    </SlideTypeTwo>
+
+    <SlideTypeTwo>
+        <h3>Common Intermediate Language (CIL)</h3>
+        <br />
+        <pre class="fragment"><code data-trim data-noescape data-line-numbers>
+.assembly Hello {}
+.assembly extern mscorlib {}
+.method static void Main()
+{
+    .entrypoint
+    .maxstack 1
+    ldstr "Hello, world!"
+    call void [mscorlib]System.Console::WriteLine(string)
+    ret
+}
+        </code></pre>
+    </SlideTypeTwo>
+</template>

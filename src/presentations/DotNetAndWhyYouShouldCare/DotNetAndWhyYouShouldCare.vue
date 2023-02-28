@@ -4,8 +4,9 @@ import { useReveal } from '@/composables/useReveal';
 import { useTitle } from '@/composables/useTitle';
 import PresentationWrapper from '@/components/PresentationWrapper.vue';
 import TitleSlide from '@/components/TitleSlide.vue';
-import WhatIsDotNetSlide from '@/presentations/slides/WhatIsDotNetSlide.vue';
-import WhatCanYouDoWithItSlide from '@/presentations/slides/WhatCanYouDoWithItSlide.vue';
+import WhatIsDotNetSlide from '@/presentations/DotNetAndWhyYouShouldCare/slides/WhatIsDotNetSlide.vue';
+import WhatCanYouDoWithItSlide from '@/presentations/DotNetAndWhyYouShouldCare/slides/WhatCanYouDoWithItSlide.vue';
+import HowDoesDotNetDoAllOfThis from '@/presentations/DotNetAndWhyYouShouldCare/slides/HowDoesDotNetDoAllOfThis.vue';
 
 const { initialize, destroy } = useReveal();
 
@@ -25,8 +26,7 @@ onUnmounted(() => {
         <TitleSlide title=".NET and Why You Should Care" />
         <WhatIsDotNetSlide />
         <WhatCanYouDoWithItSlide />
-        <section>
-            <h3>Hello Slide 3</h3>
-        </section>
+        <TitleSlide title="How Does .NET Do All of This?" />
+        <HowDoesDotNetDoAllOfThis />
     </PresentationWrapper>
 </template>

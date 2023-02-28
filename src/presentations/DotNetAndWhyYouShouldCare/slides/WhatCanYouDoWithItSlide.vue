@@ -66,13 +66,13 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
             <h3>IoT (Internet of Things)</h3>
             <ul>
                 <li>IoT Libraries (including device bindings)</li>
-                <li>Meadow</li>
+                <li>Wilderness Labs Meadow Board</li>
             </ul>
         </div>
     </SlideTypeTwo>
 
     <SlideTypeTwo>
-        <h4>It Does All of This While Using the Same:</h4>
+        <h4>.NET Does All of This While Using the Same:</h4>
         <ul class="fragment">
             <li>Programming languages</li>
             <li>Libraries</li>
