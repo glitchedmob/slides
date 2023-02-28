@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
+import SlideTypeOne from '@/components/SlideTypeOne.vue';
 </script>
 <template>
     <SlideTypeTwo>
@@ -12,6 +13,16 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
     </SlideTypeTwo>
 
     <SlideTypeTwo>
+        <h3>Tooling</h3>
+        <ul class="fragment">
+            <li>Base Class Library (BCL)</li>
+            <li>Nuget (package management)</li>
+            <li>Visual Studio (Windows & Mac)</li>
+            <li>Command line tools - <code>dotnet</code></li>
+        </ul>
+    </SlideTypeTwo>
+
+    <SlideTypeOne>
         <div class="r-grid">
             <div class="r-col">
                 <h3>The Compiler</h3>
@@ -30,9 +41,9 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
                 />
             </div>
         </div>
-    </SlideTypeTwo>
+    </SlideTypeOne>
 
-    <SlideTypeTwo>
+    <SlideTypeOne>
         <h3>Common Intermediate Language (CIL)</h3>
         <br />
         <pre class="fragment"><code data-trim data-noescape data-line-numbers>
@@ -47,9 +58,9 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
     ret
 }
         </code></pre>
-    </SlideTypeTwo>
+    </SlideTypeOne>
 
-    <SlideTypeTwo>
+    <SlideTypeOne>
         <h3>Common Language Runtime (CLR)</h3>
         <ul class="fragment">
             <li>The .NET virtual machine</li>
@@ -57,15 +68,5 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
             <li>Memory management/garbage collection</li>
             <li>Type safety and exception handling</li>
         </ul>
-    </SlideTypeTwo>
-
-    <SlideTypeTwo>
-        <h3>Tooling</h3>
-        <ul class="fragment">
-            <li>Base Class Library (BCL)</li>
-            <li>Nuget (package management)</li>
-            <li>Visual Studio (Windows & Mac)</li>
-            <li>Command line tools - <code>dotnet</code></li>
-        </ul>
-    </SlideTypeTwo>
+    </SlideTypeOne>
 </template>
