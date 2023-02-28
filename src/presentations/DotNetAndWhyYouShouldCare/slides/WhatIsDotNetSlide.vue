@@ -5,7 +5,7 @@ import SlideTypeOne from '@/components/SlideTypeOne.vue';
     <SlideTypeOne>
         <h2>What is .NET?</h2>
         <p class="fragment">
-            .NET is an open-source developer platform from Microsoft for building all sorts of applications.
+            .NET is an coropen-source developer platform from Microsoft for building all sorts of applications.
         </p>
     </SlideTypeOne>
 
