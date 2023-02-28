@@ -4,6 +4,10 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
 
 <template>
     <SlideTypeTwo>
+        <h2>Anatomy of a .NET Project</h2>
+    </SlideTypeTwo>
+
+    <SlideTypeTwo>
         <h3>Files and Layout</h3>
         <div class="r-grid fragment">
             <div class="r-col-2">

@@ -4,10 +4,12 @@ import { useReveal } from '@/composables/useReveal';
 import { useTitle } from '@/composables/useTitle';
 import PresentationWrapper from '@/components/PresentationWrapper.vue';
 import TitleSlide from '@/components/TitleSlide.vue';
+import SlideTypeOne from '@/components/SlideTypeOne.vue';
 import WhatIsDotNetSlides from '@/presentations/DotNetAndWhyYouShouldCare/slides/WhatIsDotNetSlides.vue';
 import WhatCanYouDoWithItSlides from '@/presentations/DotNetAndWhyYouShouldCare/slides/WhatCanYouDoWithItSlides.vue';
 import HowDoesDotNetDoAllOfThisSlides from '@/presentations/DotNetAndWhyYouShouldCare/slides/HowDoesDotNetDoAllOfThisSlides.vue';
 import AnatomyOfADotNetAppSlides from '@/presentations/DotNetAndWhyYouShouldCare/slides/AnatomyOfADotNetAppSlides.vue';
+import SoWhyShouldYouCareSlides from '@/presentations/DotNetAndWhyYouShouldCare/slides/SoWhyShouldYouCareSlides.vue';
 
 const { initialize, destroy } = useReveal();
 
@@ -29,7 +31,10 @@ onUnmounted(() => {
         <WhatCanYouDoWithItSlides />
         <TitleSlide title="How Does .NET Do All of This?" />
         <HowDoesDotNetDoAllOfThisSlides />
-        <TitleSlide title="Anatomy of a .NET Project" />
         <AnatomyOfADotNetAppSlides />
+        <SlideTypeOne><h2>Demo! 🎉</h2></SlideTypeOne>
+        <TitleSlide title="So Why Should You Care?" />
+        <SoWhyShouldYouCareSlides />
+        <TitleSlide title="Questions?" />
     </PresentationWrapper>
 </template>
