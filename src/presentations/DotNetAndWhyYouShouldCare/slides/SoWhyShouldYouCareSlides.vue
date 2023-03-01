@@ -31,7 +31,7 @@ import SlideTypeOne from '@/components/SlideTypeOne.vue';
     </SlideTypeOne>
 
     <SlideTypeOne>
-        <h3>Reliability 🎯</h3>
+        <h3>Reliability 🛡️</h3>
         <ul class="fragment">
             <li>Strong type system</li>
             <li>Automatic memory management</li>
