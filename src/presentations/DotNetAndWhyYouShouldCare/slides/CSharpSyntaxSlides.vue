@@ -5,7 +5,7 @@ import SlideTypeOne from '@/components/SlideTypeOne.vue';
 <template>
     <SlideTypeOne>
         <h2>C# Syntax</h2>
-        <pre><code data-trim data-noescape data-line-numbers="5,11|6,10|7-8|3|1,7">
+        <pre><code data-trim data-noescape data-line-numbers="5,11|6,10|7-8|3|1,9">
 using System;
 
 namespace MyNamespace;
@@ -81,7 +81,7 @@ public class Cat : Animal {
 
     <SlideTypeOne>
         <h2>C# Syntax - Attributes</h2>
-        <pre><code data-trim data-noescape data-line-numbers>
+        <pre><code data-trim data-noescape data-line-numbers="1-7|1,3">
 [Serializable]
 public class MyClass {
     [Obsolete("This method is deprecated.")]
@@ -94,7 +94,7 @@ public class MyClass {
 
     <SlideTypeOne>
         <h2>C# Syntax - Generics</h2>
-        <pre><code data-trim data-noescape data-line-numbers>
+        <pre><code data-trim data-noescape data-line-numbers="1-15|1|2,8,12|5">
 public class MyGenericClass&#60;T&#62; {
     private T[] myArray;
 
