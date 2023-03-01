@@ -2,11 +2,5 @@
 @import '../../node_modules/reveal.js/dist/theme/black.css';
 @import '../../node_modules/highlight.js/styles/base16/material.css';
 
-@import 'base/reset';
-@import 'base/utils';
+@import 'base/all';
 @import 'reveal-theme';
-
-.reveal {
-    width: 100vw;
-    height: 100vh;
-}
