@@ -10,6 +10,7 @@ import WhatCanYouDoWithItSlides from '@/presentations/DotNetAndWhyYouShouldCare/
 import HowDoesDotNetDoAllOfThisSlides from '@/presentations/DotNetAndWhyYouShouldCare/slides/HowDoesDotNetDoAllOfThisSlides.vue';
 import AnatomyOfADotNetAppSlides from '@/presentations/DotNetAndWhyYouShouldCare/slides/AnatomyOfADotNetAppSlides.vue';
 import SoWhyShouldYouCareSlides from '@/presentations/DotNetAndWhyYouShouldCare/slides/SoWhyShouldYouCareSlides.vue';
+import CSharpSyntaxSlides from '@/presentations/DotNetAndWhyYouShouldCare/slides/CSharpSyntaxSlides.vue';
 
 const { initialize, destroy } = useReveal();
 
@@ -32,6 +33,7 @@ onUnmounted(() => {
         <TitleSlide title="How Does .NET Do All of This?" />
         <HowDoesDotNetDoAllOfThisSlides />
         <AnatomyOfADotNetAppSlides />
+        <CSharpSyntaxSlides />
         <SlideTypeOne><h2>Demo! 🎉</h2></SlideTypeOne>
         <TitleSlide title="So Why Should You Care?" />
         <SoWhyShouldYouCareSlides />
