@@ -34,7 +34,12 @@ onUnmounted(() => {
         <HowDoesDotNetDoAllOfThisSlides />
         <AnatomyOfADotNetAppSlides />
         <CSharpSyntaxSlides />
-        <SlideTypeOne><h2>Demo! 🎉</h2></SlideTypeOne>
+        <SlideTypeOne>
+            <h2>Demo! 🎉</h2>
+            <a href="https://github.com/glitchedmob/dotnet-and-why-you-should-care-demo" target="_blank">
+                glitchedmob/dotnet-and-why-you-should-care-demo
+            </a>
+        </SlideTypeOne>
         <TitleSlide title="So Why Should You Care?" />
         <SoWhyShouldYouCareSlides />
         <TitleSlide title="Questions?" />
