@@ -12,6 +12,12 @@ useTitle('Levi Zitting Slides');
                 <RouterLink class="link" :to="{ name: 'DotNetAndWhyYouShouldCare' }">
                     .NET And Why You Should Care
                 </RouterLink>
+                <br />
+                <br />
+                <br />
+                <RouterLink class="link" :to="{ name: 'MeadowBoard' }">
+                    Bring Your IoT Ideas to Life With the Meadow Board and Its Game-Changing .NET Apis
+                </RouterLink>
             </div>
         </div>
     </div>
