@@ -41,7 +41,9 @@ const leaveY = computed(() => `${props.position.y}vh`);
 
     &.v-enter-active,
     &.v-leave-active {
-        transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+        transition:
+            transform 400ms ease-in-out,
+            opacity 400ms ease-in-out;
     }
 
     &.v-enter-active {
