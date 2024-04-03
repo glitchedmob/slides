@@ -51,6 +51,12 @@ onUnmounted(() => {
         <DockerSlides />
         <CaddySlides />
         <ResticSlides />
+        <SlideTypeOne>
+            <h2>Demo 2 🎉</h2>
+            <a href="https://github.com/sgfdevs/mastodon" target="_blank">
+                github.com/sgfdevs/mastodon
+            </a>
+        </SlideTypeOne>
         <WrapUpSlides />
         <TitleSlide title="Questions?" />
     </PresentationWrapper>

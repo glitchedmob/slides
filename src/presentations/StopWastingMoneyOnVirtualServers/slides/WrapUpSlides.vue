@@ -12,17 +12,23 @@ import SlideTypeOne from '@/components/SlideTypeOne.vue';
             <li class="fragment">Email servers</li>
             <li class="fragment">Anything touching payments</li>
             <li class="fragment">Game servers</li>
+            <li class="fragment">Most real world things</li>
         </ul>
     </SlideTypeOne>
     <SlideTypeOne>
         <h3>Disclaimers</h3>
         <ul>
-            <li class="fragment">This was not legal advice</li>
+            <li class="fragment">
+                This was not legal advice
+                <ul>
+                    <li>Don't blame me if your ISP shuts you down</li>
+                </ul>
+            </li>
             <li class="fragment">
                 Putting things on the internet is always risky
                 <ul>
-                    <li class="fragment">Plan accordingly</li>
-                    <li class="fragment">E.g. tighten your home networks security</li>
+                    <li>Plan accordingly</li>
+                    <li>E.g. tighten your home networks security</li>
                 </ul>
             </li>
         </ul>
