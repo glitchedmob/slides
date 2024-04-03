@@ -11,7 +11,7 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
         <h3>Backblaze</h3>
         <div class="fragment">
             <p>Provides very cheap S3 compatible storage. Excellent for storing backups</p>
-            <img style="max-height: 30vh" src="../../../assets/images/backblaze-pricing.png" alt="Screenshot of Backblaze pricing page">
+            <img style="max-height: 30vh" src="@/assets/images/backblaze-pricing.png" alt="Screenshot of Backblaze pricing page">
         </div>
     </SlideTypeTwo>
     <SlideTypeTwo>

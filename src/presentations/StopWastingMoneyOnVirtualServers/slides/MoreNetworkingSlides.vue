@@ -27,4 +27,15 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
             </ul>
         </div>
     </SlideTypeTwo>
+    <SlideTypeTwo>
+        <h3>VPN Part 2</h3>
+        <div class="r-grid fragment">
+            <div class="r-col">
+                <p>Allows machines physically apart to be on the same "virtual" network</p>
+            </div>
+            <div class="r-col">
+                <img src="@/assets/images/vpn-diagram.jpg" alt="A Diagram of a VPN showing multiple physical locations">
+            </div>
+        </div>
+    </SlideTypeTwo>
 </template>
