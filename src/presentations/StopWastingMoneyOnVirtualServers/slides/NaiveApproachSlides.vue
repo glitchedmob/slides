@@ -23,11 +23,11 @@ import SlideTypeOne from '@/components/SlideTypeOne.vue';
     <SlideTypeOne>
         <h3>Why Is This Naive?</h3>
         <ul class="fragment">
-            <li class="fragment">May not be option</li>
+            <li class="fragment">May be blocked by your ISP</li>
             <li class="fragment">
                 Exposes your home IP to the public
                 <ul>
-                    <li>This can be mitigated</li>
+                    <li>This can be mitigated with something like Cloudflare</li>
                 </ul>
             </li>
             <li class="fragment">

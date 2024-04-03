@@ -28,7 +28,7 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
     </SlideTypeTwo>
     <SlideTypeTwo>
         <h3>DNS (Domain Name System)</h3>
-        <p class="fragment">A system that allows computers to convert human friendly names (like sgf.dev) into an IP address</p>
+        <p class="fragment">A system that allows computers to convert human friendly names (e.g. sgf.dev) into an IP address</p>
         <p class="fragment">Essentially the phonebook of a network</p>
         <p class="fragment"><strong>Types:</strong> A, CNAME</p>
     </SlideTypeTwo>
