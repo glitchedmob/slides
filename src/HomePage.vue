@@ -18,6 +18,12 @@ useTitle('Levi Zitting Slides');
                 <RouterLink class="link" :to="{ name: 'MeadowBoard' }">
                     Bring Your IoT Ideas to Life With the Meadow Board and Its Game-Changing .NET Apis
                 </RouterLink>
+                <br />
+                <br />
+                <br />
+                <RouterLink class="link" :to="{ name: 'StopWastingMoneyOnVirtualServers' }">
+                    Stop Wasting Money on Virtual Servers
+                </RouterLink>
             </div>
         </div>
     </div>

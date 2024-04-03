@@ -15,11 +15,15 @@ export const router = createRouter({
             name: 'DotNetAndWhyYouShouldCare',
             component: () => import('@/presentations/DotNetAndWhyYouShouldCare/DotNetAndWhyYouShouldCare.vue'),
         },
-
         {
             path: '/meadow-board',
             name: 'MeadowBoard',
             component: () => import('@/presentations/MeadowBoard/MeadowBoard.vue'),
+        },
+        {
+            path: '/stop-wasting-money-on-virtual-servers',
+            name: 'StopWastingMoneyOnVirtualServers',
+            component: () => import('@/presentations/StopWastingMoneyOnVirtualServers/StopWastingMoneyOnVirtualServers.vue'),
         },
     ],
 });
