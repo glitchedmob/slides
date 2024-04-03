@@ -9,6 +9,11 @@ import DiagramSlide from '@/presentations/StopWastingMoneyOnVirtualServers/slide
 import NetworkingSlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides/NetworkingSlides.vue';
 import NaiveApproachSlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides/NaiveApproachSlides.vue';
 import MoreNetworkingSlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides/MoreNetworkingSlides.vue';
+import WireGuardSlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides/WireGuardSlides.vue';
+import DockerSlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides/DockerSlides.vue';
+import CaddySlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides/CaddySlides.vue';
+import ResticSlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides/ResticSlides.vue';
+import WrapUpSlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides/WrapUpSlides.vue';
 
 const { initialize, destroy } = useReveal();
 
@@ -37,11 +42,17 @@ onUnmounted(() => {
         <NetworkingSlides />
         <NaiveApproachSlides />
         <MoreNetworkingSlides />
+        <SlideTypeOne>
+            <h2>So What's the Better Way?</h2>
+            <p class="fragment">Well... you cheat a bit</p>
+        </SlideTypeOne>
         <DiagramSlide />
+        <WireGuardSlides />
+        <DockerSlides />
+        <CaddySlides />
+        <ResticSlides />
+        <WrapUpSlides />
         <TitleSlide title="Questions?" />
     </PresentationWrapper>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
