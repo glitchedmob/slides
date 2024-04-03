@@ -5,9 +5,9 @@ module.exports = {
     root: true,
     extends: [
         'plugin:vue/vue3-recommended',
-        'plugin:prettier/recommended',
         'eslint:recommended',
         '@vue/eslint-config-typescript',
+        '@vue/eslint-config-prettier/skip-formatting'
     ],
     parserOptions: {
         ecmaVersion: 'latest',
