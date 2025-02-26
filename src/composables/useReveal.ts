@@ -5,7 +5,7 @@ import RevealNotes from 'reveal.js/plugin/notes/notes';
 
 type RevealOnReadyCallback = (reveal: Reveal.Api) => void | Promise<void>;
 
-const reveal = ref<Reveal.Api | undefined>();
+export const reveal = ref<Reveal.Api | undefined>();
 const isReadyCallbacks = ref<RevealOnReadyCallback[]>([]);
 const onReady = (callback: RevealOnReadyCallback) => {
     if (reveal.value) {
@@ -16,38 +16,38 @@ const onReady = (callback: RevealOnReadyCallback) => {
     isReadyCallbacks.value.push(callback);
 };
 
-export const useReveal = () => {
-    const initialize = async () => {
-        const revealInstance = new Reveal();
+const revealOptions = {
+    hash: true,
+    respondToHashChanges: true,
+    history: true,
+    controls: true,
+    progress: true,
+    center: true,
+    embedded: true,
+    controlsTutorial: false,
+    plugins: [RevealHighlight, RevealNotes],
+} satisfies Reveal.Options;
 
-        await revealInstance.initialize({
-            hash: true,
-            respondToHashChanges: true,
-            history: true,
-            controls: true,
-            progress: true,
-            center: true,
-            embedded: true,
-            controlsTutorial: false,
-            plugins: [RevealHighlight, RevealNotes],
-        });
+const initialize = async () => {
+    if (reveal.value) {
+        throw new Error('Reveal already initialized, please call `destroy` first before creating a new instance.');
+    }
 
-        reveal.value = revealInstance;
-        isReadyCallbacks.value.forEach((cb) => cb(revealInstance));
-        isReadyCallbacks.value = [];
-    };
+    const revealInstance = new Reveal();
 
-    const destroy = () => {
-        reveal.value?.destroy();
-        reveal.value = undefined;
-        isReadyCallbacks.value = [];
-    };
+    await revealInstance.initialize(revealOptions);
 
-    return { reveal, onReady, initialize, destroy };
+    reveal.value = revealInstance;
+    isReadyCallbacks.value.forEach((cb) => cb(revealInstance));
+    isReadyCallbacks.value = [];
 };
 
-if (import.meta.hot) {
-    import.meta.hot.on('vite:afterUpdate', () => {
-        reveal.value?.sync();
-    });
-}
+const destroy = () => {
+    reveal.value?.destroy();
+    reveal.value = undefined;
+    isReadyCallbacks.value = [];
+};
+
+export const useReveal = () => {
+    return { reveal, onReady, initialize, destroy };
+};
