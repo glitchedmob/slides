@@ -35,9 +35,7 @@ onUnmounted(() => {
         <TitleSlide class="title" title="Stop Wasting Money on Virtual Servers" />
         <SlideTypeOne>
             <h2>Demo 🎉</h2>
-            <a href="https://social.sgf.dev" target="_blank">
-                social.sgf.dev
-            </a>
+            <a href="https://social.sgf.dev" target="_blank">social.sgf.dev</a>
         </SlideTypeOne>
         <NetworkingSlides />
         <NaiveApproachSlides />
@@ -67,12 +65,9 @@ onUnmounted(() => {
         <ResticSlides />
         <SlideTypeOne>
             <h2>Demo 2 🎉</h2>
-            <a href="https://github.com/sgfdevs/mastodon" target="_blank">
-                github.com/sgfdevs/mastodon
-            </a>
+            <a href="https://github.com/sgfdevs/mastodon" target="_blank">github.com/sgfdevs/mastodon</a>
         </SlideTypeOne>
         <WrapUpSlides />
         <TitleSlide title="Questions?" />
     </PresentationWrapper>
 </template>
-

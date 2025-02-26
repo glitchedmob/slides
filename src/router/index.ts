@@ -23,7 +23,8 @@ export const router = createRouter({
         {
             path: '/stop-wasting-money-on-virtual-servers',
             name: 'StopWastingMoneyOnVirtualServers',
-            component: () => import('@/presentations/StopWastingMoneyOnVirtualServers/StopWastingMoneyOnVirtualServers.vue'),
+            component: () =>
+                import('@/presentations/StopWastingMoneyOnVirtualServers/StopWastingMoneyOnVirtualServers.vue'),
         },
     ],
 });

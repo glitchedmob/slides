@@ -34,4 +34,3 @@ import SlideTypeOne from '@/components/SlideTypeOne.vue';
         </ul>
     </SlideTypeOne>
 </template>
-

@@ -34,7 +34,10 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
                 <p>Allows machines physically apart to be on the same "virtual" network</p>
             </div>
             <div class="r-col">
-                <img src="@/assets/images/vpn-diagram.jpg" alt="A Diagram of a VPN showing multiple physical locations">
+                <img
+                    src="@/assets/images/vpn-diagram.jpg"
+                    alt="A Diagram of a VPN showing multiple physical locations"
+                />
             </div>
         </div>
     </SlideTypeTwo>

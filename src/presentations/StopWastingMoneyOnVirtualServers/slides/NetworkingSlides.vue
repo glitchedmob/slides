@@ -28,7 +28,9 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
     </SlideTypeTwo>
     <SlideTypeTwo>
         <h3>DNS (Domain Name System)</h3>
-        <p class="fragment">A system that allows computers to convert human friendly names (e.g. sgf.dev) into an IP address</p>
+        <p class="fragment">
+            A system that allows computers to convert human friendly names (e.g. sgf.dev) into an IP address
+        </p>
         <p class="fragment">Essentially the phonebook of a network</p>
         <p class="fragment"><strong>Types:</strong> A, CNAME</p>
     </SlideTypeTwo>
@@ -37,7 +39,10 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
         <p class="fragment">Used to identify a specific protocol or application to communicate with</p>
         <div class="fragment r-grid">
             <div class="r-col-2">
-                <p>Some common protocols <br> and ports</p>
+                <p>
+                    Some common protocols <br />
+                    and ports
+                </p>
             </div>
             <div class="r-col-1">
                 <ul>
@@ -52,7 +57,9 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
     <SlideTypeTwo>
         <h3>NAT (Network Address Translation)</h3>
         <p class="fragment">Allows a network to share an IP when communicating with another network</p>
-        <p class="fragment">Rewrites outgoing packets to use the shared address + a unique port for the reply address</p>
+        <p class="fragment">
+            Rewrites outgoing packets to use the shared address + a unique port for the reply address
+        </p>
         <p class="fragment">Uses a table of those rewrites to do the inverse for incoming packets</p>
     </SlideTypeTwo>
 </template>

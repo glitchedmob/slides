@@ -23,14 +23,12 @@ import SlideTypeTwo from '@/components/SlideTypeTwo.vue';
 
 <style scoped lang="scss">
 .small {
-    font-size: .5em;
+    font-size: 0.5em;
     line-height: 1;
 }
 
 .tiny {
-    font-size: .4em;
+    font-size: 0.4em;
     line-height: 1;
 }
 </style>
-
-
