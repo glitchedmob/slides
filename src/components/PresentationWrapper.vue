@@ -18,9 +18,8 @@ const updateSlideTypeFromSlide = (slide: HTMLElement) => {
 onReady((reveal) => {
     updateSlideTypeFromSlide(reveal.getCurrentSlide());
 
-    reveal.on('slidechanged', (event) => {
-        const slide = (event as any).currentSlide as HTMLElement;
-        updateSlideTypeFromSlide(slide);
+    reveal.on('slidechanged', () => {
+        updateSlideTypeFromSlide(reveal.getCurrentSlide());
     });
 });
 </script>
