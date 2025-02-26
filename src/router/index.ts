@@ -26,5 +26,10 @@ export const router = createRouter({
             component: () =>
                 import('@/presentations/StopWastingMoneyOnVirtualServers/StopWastingMoneyOnVirtualServers.vue'),
         },
+        {
+            path: '/how-to-get-things-done',
+            name: 'HowToGetThingsDone',
+            component: () => import('@/presentations/HowToGetThingsDone/HowToGetThingsDone.vue'),
+        },
     ],
 });

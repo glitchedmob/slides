@@ -24,6 +24,10 @@ useTitle('Levi Zitting Slides');
                 <RouterLink class="link" :to="{ name: 'StopWastingMoneyOnVirtualServers' }">
                     Stop Wasting Money on Virtual Servers
                 </RouterLink>
+                <br />
+                <br />
+                <br />
+                <RouterLink class="link" :to="{ name: 'HowToGetThingsDone' }"> How To Get Things Done </RouterLink>
             </div>
         </div>
     </div>
