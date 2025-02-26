@@ -4,6 +4,7 @@ import { useReveal } from '@/composables/useReveal';
 import { useTitle } from '@/composables/useTitle';
 import PresentationWrapper from '@/components/PresentationWrapper.vue';
 import TitleSlide from '@/components/TitleSlide.vue';
+import ResourcesSlides from '@/presentations/HowToGetThingsDone/slides/ResourcesSlides.vue';
 // import SlideTypeOne from '@/components/SlideTypeOne.vue';
 
 const { initialize, destroy } = useReveal();
@@ -23,6 +24,7 @@ onUnmounted(() => {
 <template>
     <PresentationWrapper>
         <TitleSlide class="title" :title="title" />
+        <ResourcesSlides />
         <TitleSlide title="Questions?" />
     </PresentationWrapper>
 </template>
