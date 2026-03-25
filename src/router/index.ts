@@ -31,5 +31,10 @@ export const router = createRouter({
             name: 'HowToGetThingsDone',
             component: () => import('@/presentations/HowToGetThingsDone/HowToGetThingsDone.vue'),
         },
+        {
+            path: '/house-datacenter',
+            name: 'HouseDatacenter',
+            component: () => import('@/presentations/HouseDatacenter/HouseDatacenter.vue'),
+        },
     ],
 });

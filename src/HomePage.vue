@@ -28,6 +28,12 @@ useTitle('Levi Zitting Slides');
                 <br />
                 <br />
                 <RouterLink class="link" :to="{ name: 'HowToGetThingsDone' }"> How To Get Things Done </RouterLink>
+                <br />
+                <br />
+                <br />
+                <RouterLink class="link" :to="{ name: 'HouseDatacenter' }">
+                    I turned My House Into a Datacenter (And You Can Too)
+                </RouterLink>
             </div>
         </div>
     </div>
