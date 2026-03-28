@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import TitleSlide from '@/components/TitleSlide.vue';
+import SlideTypeOne from '@/components/SlideTypeOne.vue';
 </script>
 
 <template>
-    <TitleSlide class="title" title="Demo 🚀" />
+    <SlideTypeOne>
+        <h2>Demo 🚀</h2>
+        <a href="https://github.com/glitchedmob/infra" target="_blank"> glitchedmob/infra </a>
+    </SlideTypeOne>
 </template>
