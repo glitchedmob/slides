@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
-
 import HomePage from '@/HomePage.vue';
+import { presentations } from '@/presentations';
 
 export const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,31 +10,6 @@ export const router = createRouter({
             name: 'home',
             component: HomePage,
         },
-        {
-            path: '/dotnet-and-why-you-should-care',
-            name: 'DotNetAndWhyYouShouldCare',
-            component: () => import('@/presentations/DotNetAndWhyYouShouldCare/DotNetAndWhyYouShouldCare.vue'),
-        },
-        {
-            path: '/meadow-board',
-            name: 'MeadowBoard',
-            component: () => import('@/presentations/MeadowBoard/MeadowBoard.vue'),
-        },
-        {
-            path: '/stop-wasting-money-on-virtual-servers',
-            name: 'StopWastingMoneyOnVirtualServers',
-            component: () =>
-                import('@/presentations/StopWastingMoneyOnVirtualServers/StopWastingMoneyOnVirtualServers.vue'),
-        },
-        {
-            path: '/how-to-get-things-done',
-            name: 'HowToGetThingsDone',
-            component: () => import('@/presentations/HowToGetThingsDone/HowToGetThingsDone.vue'),
-        },
-        {
-            path: '/house-datacenter',
-            name: 'HouseDatacenter',
-            component: () => import('@/presentations/HouseDatacenter/HouseDatacenter.vue'),
-        },
+        ...presentations.map(({ path, name, component }) => ({ path, name, component })),
     ],
 });

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue';
-import { useReveal } from '@/composables/useReveal';
 import { useTitle } from '@/composables/useTitle';
 import PresentationWrapper from '@/components/PresentationWrapper.vue';
 import TitleSlide from '@/components/TitleSlide.vue';
@@ -15,19 +13,9 @@ import CaddySlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides
 import ResticSlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides/ResticSlides.vue';
 import WrapUpSlides from '@/presentations/StopWastingMoneyOnVirtualServers/slides/WrapUpSlides.vue';
 
-const { initialize, destroy } = useReveal();
-
 const title = 'Stop Wasting Money on Virtual Servers';
 
 useTitle(title);
-
-onMounted(async () => {
-    await initialize();
-});
-
-onUnmounted(() => {
-    destroy();
-});
 </script>
 
 <template>

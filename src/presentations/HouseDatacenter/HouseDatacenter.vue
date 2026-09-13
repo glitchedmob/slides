@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue';
-import { useReveal } from '@/composables/useReveal';
 import { useTitle } from '@/composables/useTitle';
 import PresentationWrapper from '@/components/PresentationWrapper.vue';
 import IntroSlides from '@/presentations/HouseDatacenter/slides/IntroSlides.vue';
@@ -21,19 +19,9 @@ import AutomationPolicySlides from '@/presentations/HouseDatacenter/slides/Autom
 import DemosSlides from '@/presentations/HouseDatacenter/slides/DemosSlides.vue';
 import TitleSlide from '@/components/TitleSlide.vue';
 
-const { initialize, destroy } = useReveal();
-
 const title = 'I turned My House Into a Datacenter (And You Can Too)';
 
 useTitle(title);
-
-onMounted(async () => {
-    await initialize();
-});
-
-onUnmounted(() => {
-    destroy();
-});
 </script>
 
 <template>
