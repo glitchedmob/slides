@@ -24,7 +24,7 @@
                     <li>
                         <a
                             class="text-[25px] text-white underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky"
-                            href={resolve(presentation.path)}
+                            href={resolve(`${presentation.path}#/`)}
                         >
                             {presentation.title}
                         </a>

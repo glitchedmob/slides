@@ -69,6 +69,7 @@
 </script>
 
 <div
+    id="/"
     bind:this={element}
     class={[
         'reveal h-dvh w-screen [--r-code-font:var(--font-mono)]',
