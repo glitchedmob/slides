@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+@import 'reveal.js/reveal.css' layer(components);
+@import 'reveal.js/theme/black.css' layer(components);
+@import 'highlight.js/styles/base16/material.css' layer(components);
+
+@theme {
+    --color-navy: #05172f;
+    --color-sky: #58a3f2;
+    --font-sans: 'Roboto', Helvetica, sans-serif;
+    --font-heading: 'Montserrat', Helvetica, sans-serif;
+    --font-mono: 'Roboto Mono', monospace;
+}
