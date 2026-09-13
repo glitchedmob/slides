@@ -1,6 +1,6 @@
 <script lang="ts">
+    import Markdown from 'reveal.js/plugin/markdown';
     import presentation from './presentation';
-    import { marked } from 'marked';
     import RevealPresentation from '$lib/components/RevealPresentation.svelte';
     import './mint-theme.scss';
     import title from './slides/slide-1.md?raw';
@@ -14,7 +14,6 @@
     import installation from './slides/slide-7.md?raw';
     import resources from './slides/slide-8.md?raw';
 
-    // Render bundled Markdown before Reveal initializes so Svelte retains DOM ownership.
     const slides = [
         title,
         windows,
@@ -26,7 +25,8 @@
         expectations,
         installation,
         resources,
-    ].map((source) => marked.parse(source, { async: false }));
+    ];
+    const options = { plugins: [Markdown] };
 </script>
 
 <svelte:head>
@@ -38,11 +38,10 @@
 </svelte:head>
 
 <div class="why-linux">
-    <RevealPresentation theme="custom">
-        {#each slides as html, index (index)}
-            <section class:center={index === 0} class:steps={index === 8}>
-                <!-- eslint-disable-next-line svelte/no-at-html-tags -- Only bundled, repository-owned Markdown is rendered here. -->
-                {@html html}
+    <RevealPresentation theme="custom" {options}>
+        {#each slides as slide, index (index)}
+            <section data-markdown="">
+                <div data-template="" hidden>{slide}</div>
             </section>
         {/each}
     </RevealPresentation>
