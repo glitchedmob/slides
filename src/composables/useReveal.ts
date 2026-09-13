@@ -1,11 +1,11 @@
 import { ref } from 'vue';
-import Reveal from 'reveal.js';
-import RevealHighlight from 'reveal.js/plugin/highlight/highlight';
-import RevealNotes from 'reveal.js/plugin/notes/notes';
+import Reveal, { type RevealApi, type RevealConfig } from 'reveal.js';
+import RevealHighlight from 'reveal.js/plugin/highlight';
+import RevealNotes from 'reveal.js/plugin/notes';
 
-type RevealOnReadyCallback = (reveal: Reveal.Api) => void | Promise<void>;
+type RevealOnReadyCallback = (reveal: RevealApi) => void | Promise<void>;
 
-export const reveal = ref<Reveal.Api | undefined>();
+export const reveal = ref<RevealApi | undefined>();
 const isReadyCallbacks = ref<RevealOnReadyCallback[]>([]);
 const onReady = (callback: RevealOnReadyCallback) => {
     if (reveal.value) {
@@ -26,7 +26,7 @@ const revealOptions = {
     embedded: true,
     controlsTutorial: false,
     plugins: [RevealHighlight, RevealNotes],
-} satisfies Reveal.Options;
+} satisfies RevealConfig;
 
 const initialize = async () => {
     if (reveal.value) {
