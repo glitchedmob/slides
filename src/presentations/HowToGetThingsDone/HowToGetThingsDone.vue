@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue';
-import { useReveal } from '@/composables/useReveal';
 import { useTitle } from '@/composables/useTitle';
 import PresentationWrapper from '@/components/PresentationWrapper.vue';
 import TitleSlide from '@/components/TitleSlide.vue';
@@ -12,19 +10,9 @@ import RegularReflectionSlides from '@/presentations/HowToGetThingsDone/slides/R
 import TimeManagementSlides from '@/presentations/HowToGetThingsDone/slides/TimeManagementSlides.vue';
 import CommunicatingWell from '@/presentations/HowToGetThingsDone/slides/CommunicatingWell.vue';
 
-const { initialize, destroy } = useReveal();
-
 const title = 'How To Get Things Done';
 
 useTitle(title);
-
-onMounted(async () => {
-    await initialize();
-});
-
-onUnmounted(() => {
-    destroy();
-});
 </script>
 <template>
     <PresentationWrapper>

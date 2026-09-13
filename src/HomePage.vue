@@ -1,49 +1,34 @@
 <script setup lang="ts">
 import { useTitle } from '@/composables/useTitle';
+import { presentations } from '@/presentations';
 
 useTitle('Levi Zitting Slides');
 </script>
 
 <template>
-    <div class="home">
+    <main class="home">
         <div class="container">
-            <div class="container">
-                <h1>Slides</h1>
-                <RouterLink class="link" :to="{ name: 'DotNetAndWhyYouShouldCare' }">
-                    .NET And Why You Should Care
-                </RouterLink>
-                <br />
-                <br />
-                <br />
-                <RouterLink class="link" :to="{ name: 'MeadowBoard' }">
-                    Bring Your IoT Ideas to Life With the Meadow Board and Its Game-Changing .NET Apis
-                </RouterLink>
-                <br />
-                <br />
-                <br />
-                <RouterLink class="link" :to="{ name: 'StopWastingMoneyOnVirtualServers' }">
-                    Stop Wasting Money on Virtual Servers
-                </RouterLink>
-                <br />
-                <br />
-                <br />
-                <RouterLink class="link" :to="{ name: 'HowToGetThingsDone' }"> How To Get Things Done </RouterLink>
-                <br />
-                <br />
-                <br />
-                <RouterLink class="link" :to="{ name: 'HouseDatacenter' }">
-                    I turned My House Into a Datacenter (And You Can Too)
-                </RouterLink>
-            </div>
+            <h1>Slides</h1>
+            <nav aria-label="Presentations">
+                <ul class="presentation-list">
+                    <li v-for="presentation in presentations" :key="presentation.name">
+                        <RouterLink class="link" :to="{ name: presentation.name }">
+                            {{ presentation.title }}
+                        </RouterLink>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </main>
 </template>
 
 <style scoped lang="scss">
 .home {
     background-color: var(--dark-blue);
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    padding-bottom: 50px;
+    box-sizing: border-box;
 
     h1 {
         color: var(--white);
@@ -53,6 +38,11 @@ useTitle('Levi Zitting Slides');
         text-align: center;
         padding: 50px 0;
     }
+}
+
+.presentation-list {
+    display: grid;
+    gap: 48px;
 }
 
 .link {

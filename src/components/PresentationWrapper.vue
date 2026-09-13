@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import RevealPresentation from '@/components/RevealPresentation.vue';
 import { useReveal } from '@/composables/useReveal';
 import type { SlideTypes } from '@/slideTypes';
 import { parseSlideType, slideTypes } from '@/slideTypes';
@@ -25,19 +26,19 @@ onReady((reveal) => {
 </script>
 
 <template>
-    <div class="reveal">
-        <div class="background-container">
-            <TitleBackground class="background" :active="slideType === slideTypes.title" />
-            <TypeOneBackground class="background" :active="slideType === slideTypes.type1" />
-            <TypeTwoBackground class="background" :active="slideType === slideTypes.type2" />
-        </div>
-        <div class="logo">
-            <img src="@/assets/logo.svg" alt="Levi Zitting Logo" />
-        </div>
-        <div class="slides">
-            <slot />
-        </div>
-    </div>
+    <RevealPresentation>
+        <template #decorations>
+            <div class="background-container">
+                <TitleBackground class="background" :active="slideType === slideTypes.title" />
+                <TypeOneBackground class="background" :active="slideType === slideTypes.type1" />
+                <TypeTwoBackground class="background" :active="slideType === slideTypes.type2" />
+            </div>
+            <div class="logo">
+                <img src="@/assets/logo.svg" alt="Levi Zitting Logo" />
+            </div>
+        </template>
+        <slot />
+    </RevealPresentation>
 </template>
 
 <style scoped lang="scss">
