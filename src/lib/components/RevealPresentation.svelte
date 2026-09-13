@@ -94,7 +94,3 @@
         <a class="text-sky underline" href={resolve('/')}>Back to presentations</a>
     </div>
 {/if}
-
-<noscript>
-    <p class="fixed inset-x-0 top-0 z-50 bg-navy p-4 text-center">Enable JavaScript to navigate these slides.</p>
-</noscript>
