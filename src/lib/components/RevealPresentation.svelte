@@ -7,7 +7,7 @@
         children: Snippet;
         decorations?: Snippet;
         options?: RevealConfig;
-        theme?: 'default' | 'dev-job' | 'linux';
+        theme?: 'default' | 'custom';
         class?: string;
         onslidechange?: (slide: HTMLElement) => void;
     }
@@ -79,8 +79,6 @@
         '[&_.slides_img]:box-content [&_.slides_img]:inline [&_.slides_img]:align-baseline [&_pre]:font-normal',
         theme === 'default' &&
             'bg-navy font-light [--r-background-color:var(--color-navy)] [--r-heading-font:var(--font-heading)] [--r-heading-text-transform:none] [--r-link-color-hover:#8dcffc] [--r-link-color:var(--color-sky)] [--r-main-font:var(--font-sans)] [--r-selection-background-color:#1e345d]',
-        theme === 'dev-job' &&
-            'bg-[#263238] font-normal [--r-background-color:#263238] [--r-link-color-hover:#8dcffc] [--r-main-font:var(--font-sans)] [--r-selection-background-color:#bee4fd]',
         className,
     ]}
 >

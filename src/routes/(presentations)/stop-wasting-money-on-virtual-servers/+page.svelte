@@ -1,17 +1,22 @@
 <script lang="ts">
+    import presentation from './presentation';
     import PresentationWrapper from '$lib/components/PresentationWrapper.svelte';
     import TitleSlide from '$lib/components/TitleSlide.svelte';
     import SlideTypeOne from '$lib/components/SlideTypeOne.svelte';
-    import DiagramSlide from '$lib/presentations/StopWastingMoneyOnVirtualServers/slides/DiagramSlide.svelte';
-    import NetworkingSlides from '$lib/presentations/StopWastingMoneyOnVirtualServers/slides/NetworkingSlides.svelte';
-    import NaiveApproachSlides from '$lib/presentations/StopWastingMoneyOnVirtualServers/slides/NaiveApproachSlides.svelte';
-    import MoreNetworkingSlides from '$lib/presentations/StopWastingMoneyOnVirtualServers/slides/MoreNetworkingSlides.svelte';
-    import WireGuardSlides from '$lib/presentations/StopWastingMoneyOnVirtualServers/slides/WireGuardSlides.svelte';
-    import DockerSlides from '$lib/presentations/StopWastingMoneyOnVirtualServers/slides/DockerSlides.svelte';
-    import CaddySlides from '$lib/presentations/StopWastingMoneyOnVirtualServers/slides/CaddySlides.svelte';
-    import ResticSlides from '$lib/presentations/StopWastingMoneyOnVirtualServers/slides/ResticSlides.svelte';
-    import WrapUpSlides from '$lib/presentations/StopWastingMoneyOnVirtualServers/slides/WrapUpSlides.svelte';
+    import DiagramSlide from './slides/DiagramSlide.svelte';
+    import NetworkingSlides from './slides/NetworkingSlides.svelte';
+    import NaiveApproachSlides from './slides/NaiveApproachSlides.svelte';
+    import MoreNetworkingSlides from './slides/MoreNetworkingSlides.svelte';
+    import WireGuardSlides from './slides/WireGuardSlides.svelte';
+    import DockerSlides from './slides/DockerSlides.svelte';
+    import CaddySlides from './slides/CaddySlides.svelte';
+    import ResticSlides from './slides/ResticSlides.svelte';
+    import WrapUpSlides from './slides/WrapUpSlides.svelte';
 </script>
+
+<svelte:head>
+    <title>{presentation.title}</title>
+</svelte:head>
 
 <PresentationWrapper>
     <TitleSlide class="title" title="Stop Wasting Money on Virtual Servers" />

@@ -1,4 +1,5 @@
 <script lang="ts">
+    import presentation from './presentation';
     import { marked } from 'marked';
     import RevealPresentation from '$lib/components/RevealPresentation.svelte';
     import './mint-theme.scss';
@@ -28,8 +29,16 @@
     ].map((source) => marked.parse(source, { async: false }));
 </script>
 
+<svelte:head>
+    <title>{presentation.title}</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    />
+</svelte:head>
+
 <div class="why-linux">
-    <RevealPresentation theme="linux">
+    <RevealPresentation theme="custom">
         {#each slides as html, index (index)}
             <section class:center={index === 0} class:steps={index === 8}>
                 <!-- eslint-disable-next-line svelte/no-at-html-tags -- Only bundled, repository-owned Markdown is rendered here. -->

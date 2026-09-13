@@ -1,14 +1,19 @@
 <script lang="ts">
+    import presentation from './presentation';
     import PresentationWrapper from '$lib/components/PresentationWrapper.svelte';
     import TitleSlide from '$lib/components/TitleSlide.svelte';
     import SlideTypeOne from '$lib/components/SlideTypeOne.svelte';
-    import WhatIsDotNetSlides from '$lib/presentations/DotNetAndWhyYouShouldCare/slides/WhatIsDotNetSlides.svelte';
-    import WhatCanYouDoWithItSlides from '$lib/presentations/DotNetAndWhyYouShouldCare/slides/WhatCanYouDoWithItSlides.svelte';
-    import HowDoesDotNetDoAllOfThisSlides from '$lib/presentations/DotNetAndWhyYouShouldCare/slides/HowDoesDotNetDoAllOfThisSlides.svelte';
-    import AnatomyOfADotNetAppSlides from '$lib/presentations/DotNetAndWhyYouShouldCare/slides/AnatomyOfADotNetAppSlides.svelte';
-    import SoWhyShouldYouCareSlides from '$lib/presentations/DotNetAndWhyYouShouldCare/slides/SoWhyShouldYouCareSlides.svelte';
-    import CSharpSyntaxSlides from '$lib/presentations/DotNetAndWhyYouShouldCare/slides/CSharpSyntaxSlides.svelte';
+    import WhatIsDotNetSlides from './slides/WhatIsDotNetSlides.svelte';
+    import WhatCanYouDoWithItSlides from './slides/WhatCanYouDoWithItSlides.svelte';
+    import HowDoesDotNetDoAllOfThisSlides from './slides/HowDoesDotNetDoAllOfThisSlides.svelte';
+    import AnatomyOfADotNetAppSlides from './slides/AnatomyOfADotNetAppSlides.svelte';
+    import SoWhyShouldYouCareSlides from './slides/SoWhyShouldYouCareSlides.svelte';
+    import CSharpSyntaxSlides from './slides/CSharpSyntaxSlides.svelte';
 </script>
+
+<svelte:head>
+    <title>{presentation.title}</title>
+</svelte:head>
 
 <PresentationWrapper>
     <TitleSlide title=".NET and Why You Should Care" />

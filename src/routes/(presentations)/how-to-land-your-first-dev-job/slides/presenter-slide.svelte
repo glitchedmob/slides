@@ -1,7 +1,7 @@
 <script lang="ts">
     let { headerText }: { headerText: string } = $props();
     import asset0 from '../assets/images/me.jpg';
-    import Icon from '$lib/components/Icon.svelte';
+    import Icon from '../Icon.svelte';
 </script>
 
 <section>

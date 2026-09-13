@@ -9,13 +9,4 @@
     --font-sans: 'Roboto', Helvetica, sans-serif;
     --font-heading: 'Montserrat', Helvetica, sans-serif;
     --font-mono: 'Roboto Mono', monospace;
-    --font-icons: 'first-dev-job-icons';
-}
-
-@font-face {
-    font-family: 'first-dev-job-icons';
-    src: url('./lib/presentations/HowToLandYourFirstDevJob/assets/icons/icon.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
 }

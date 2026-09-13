@@ -1,4 +1,5 @@
 <script lang="ts">
+    import presentation from './presentation';
     import RevealPresentation from '$lib/components/RevealPresentation.svelte';
     import ProfessionalHeadshotSlide from './slides/professional-headshot-slide.svelte';
     import LookingProfessionalSlide from './slides/looking-professional-slide.svelte';
@@ -23,7 +24,14 @@
     import BlogSlide from './slides/blog-slide.svelte';
 </script>
 
-<RevealPresentation theme="dev-job">
+<svelte:head>
+    <title>{presentation.title}</title>
+</svelte:head>
+
+<RevealPresentation
+    theme="custom"
+    class="bg-[#263238] font-normal [--r-background-color:#263238] [--r-link-color-hover:#8dcffc] [--r-main-font:var(--font-sans)] [--r-selection-background-color:#bee4fd]"
+>
     <TitleSlide />
     <SettingTheStageSlide />
     <PresenterSlide headerText="Who Am I?" />
