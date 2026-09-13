@@ -5,7 +5,7 @@
 
 <div
     class={[
-        'absolute top-0 left-0 transition-[transform,opacity] duration-400 ease-in-out motion-reduce:transition-none',
+        'absolute top-0 left-0 transition-[transform,opacity] duration-400 ease-in-out',
         active ? 'opacity-100 delay-100' : 'opacity-0',
     ]}
     style:transform={`translate(${x}vw, ${position.y}vh)`}

@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount, type Snippet } from 'svelte';
-    import { resolve } from '$app/paths';
     import type { RevealApi, RevealConfig } from 'reveal.js';
 
     interface Props {
@@ -14,7 +13,6 @@
 
     let { children, decorations, options = {}, theme = 'default', class: className, onslidechange }: Props = $props();
     let element: HTMLDivElement;
-    let failure = $state(false);
 
     onMount(() => {
         let disposed = false;
@@ -59,8 +57,7 @@
             if (disposed) return;
             instance?.destroy();
             instance = undefined;
-            failure = true;
-            console.error('Unable to initialize presentation', error);
+            throw error;
         });
 
         return () => {
@@ -87,10 +84,3 @@
         {@render children()}
     </div>
 </div>
-
-{#if failure}
-    <div role="alert" class="fixed inset-0 z-50 grid place-content-center gap-4 bg-navy p-8 text-center">
-        <p>This presentation could not start. Please reload the page.</p>
-        <a class="text-sky underline" href={resolve('/')}>Back to presentations</a>
-    </div>
-{/if}

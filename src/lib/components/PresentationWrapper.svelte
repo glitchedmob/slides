@@ -17,7 +17,7 @@
     }}
 >
     {#snippet decorations()}
-        <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div class="absolute inset-0">
             <TitleBackground active={slideType === slideTypes.title} />
             <TypeOneBackground active={slideType === slideTypes.type1} />
             <TypeTwoBackground active={slideType === slideTypes.type2} />
