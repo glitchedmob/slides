@@ -1,5 +1,7 @@
 <script lang="ts">
     import Markdown from 'reveal.js/plugin/markdown';
+    import DesktopGallery from './desktop-gallery';
+    import 'photoswipe/style.css';
     import RevealPresentation from '$lib/components/RevealPresentation.svelte';
     import presentation from './presentation';
     import '../why-linux/mint-theme.scss';
@@ -7,28 +9,16 @@
     import welcome from './slides/01-welcome.md?raw';
     import context from './slides/02-linux-around-us.md?raw';
     import desktop from './slides/03-desktop-linux.md?raw';
-    import control from './slides/04-control-privacy-security.md?raw';
+    import benefits from './slides/04-benefits-and-hardware.md?raw';
     import software from './slides/05-everyday-software.md?raw';
-    import hardware from './slides/06-hardware.md?raw';
-    import gaming from './slides/07-gaming.md?raw';
-    import streaming from './slides/08-streaming-drm.md?raw';
-    import tryingLinux from './slides/09-trying-linux.md?raw';
-    import exploration from './slides/10-exploration.md?raw';
+    import gaming from './slides/06-gaming.md?raw';
+    import streaming from './slides/07-streaming-drm.md?raw';
+    import tryingLinux from './slides/08-trying-linux.md?raw';
+    import exploration from './slides/09-exploration.md?raw';
 
-    const slides = [
-        welcome,
-        context,
-        desktop,
-        control,
-        software,
-        hardware,
-        gaming,
-        streaming,
-        tryingLinux,
-        exploration,
-    ];
+    const slides = [welcome, context, desktop, benefits, software, streaming, gaming, tryingLinux, exploration];
     const options = {
-        plugins: [Markdown],
+        plugins: [Markdown, DesktopGallery],
         width: 1100,
         height: 760,
         margin: 0.08,

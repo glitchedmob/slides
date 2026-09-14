@@ -9,14 +9,13 @@
 </figure>
 
 - Levi Zitting
-- Software developer
 - President of Springfield Devs
+- Senior software engineer for 10 years
 - First used desktop Linux in 2017
 
 ---
 
-## Who has used Linux?
+## Show of hands
 
-- Windows, Mac, or something else?
-- Tried Linux before?
+- Windows, Mac, or Linux?
 - What do you use your computer for?

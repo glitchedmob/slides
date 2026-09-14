@@ -1,58 +1,53 @@
-## Everyday apps
-
-- Firefox and Chrome available on Linux
-- Browser-based work often needs few changes
-- Familiar desktop tools
-    - File manager, settings, and screenshots
-    - Calculator and PDF reader
+# Software on Linux
 
 ---
 
 ## Installing apps
 
-- Software stores handle installs and updates
-    - Package managers do the work underneath
-- Mint Software Manager
-    - System packages and Flatpak apps
-- Ubuntu App Center
-    - Debian packages and Snap apps
-- Flathub for Flatpaks, Snap Store for Snaps
+- **From a software store**
+    - Mint Software Manager, Ubuntu App Center, or Flathub
+    - Installs and updates are handled for you
+- **From the developer's website**
+    - Linux doesn't run Windows .exe or .msi installers
+    - Linux packages commonly use `.deb` or `.rpm`, depending on the distribution
+    - Some apps offer an AppImage that runs without a normal installation
 
 ---
 
-## Downloaded installers
+## What's the Same?
 
-- Windows uses `.exe` and `.msi`
-- Linux packages include `.deb` and `.rpm`
-    - Must match your distribution and processor
-- AppImages for some portable apps
+- Popular browsers like Firefox and Chrome have Linux versions
+- Many familiar apps, including Spotify, Discord, and Zoom, are available too
+- Most browser-based apps work on Linux through those same browsers
+- Familiar apps generally look and work much like their Windows versions
 
 ---
 
-## Email and documents
+## Microsoft Office and Outlook
 
-- Email
-    - Outlook on the web or Thunderbird
-- Documents
-    - Microsoft 365 web apps, LibreOffice, or ONLYOFFICE
-    - No native Linux version of desktop Microsoft Office
+- Microsoft doesn't offer Linux desktop versions
+- LibreOffice and ONLYOFFICE are alternatives to Word, Excel, and PowerPoint
+- Thunderbird is an alternative to Outlook for email
+- Microsoft's web apps remain an option
 
 ---
 
 ## Creative apps
 
-- Adobe's main desktop apps don't run natively on Linux
-- Linux alternatives
-    - GIMP for photos, Krita for painting
-    - Inkscape for illustration, Kdenlive for video
+- Adobe's main desktop apps aren't available natively
+- **Photo editing**: GIMP
+- **Painting**: Krita
+- **Illustration**: Inkscape
+- **Video editing**: Kdenlive
 
 ---
 
-## Linux Mint demo
+## Specialized tools
 
-- Compare with Windows 11
-- Browse, download, and find a file
-- Edit a document in LibreOffice Writer
-    - Save a copy and export a PDF
-- Install apps, check updates, and make text larger
-- No terminal needed
+- Some equipment depends on Windows-only companion software
+- Work-specific software may have no suitable Linux replacement
+- Keeping Windows may be necessary for those tasks
+
+<aside class="notes">
+    Tell the genealogy camera story here. The point is the page-correction software needed for the work, not whether Linux can take a picture. If those tools require Windows and no Linux alternative covers the workflow, that's a reason to keep Windows.
+</aside>

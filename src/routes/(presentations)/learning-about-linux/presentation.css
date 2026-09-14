@@ -88,6 +88,46 @@
     margin: 0;
 }
 
+.learning-about-linux .reveal [data-desktop-gallery] {
+    display: block;
+    margin-top: 1em;
+    padding: 0.55em 0.9em;
+    border: 1px solid var(--mint-accent);
+    border-radius: 6px;
+    background: var(--mint-accent);
+    color: var(--mint-bg-deep);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.learning-about-linux .reveal [data-desktop-gallery]:hover {
+    background: #a2dc73;
+}
+
+.learning-about-linux .reveal [data-desktop-gallery]:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+.linux-desktop-gallery {
+    --pswp-bg: #08090b;
+    font-family: 'Ubuntu', 'Noto Sans', sans-serif;
+}
+
+.linux-desktop-gallery .pswp__desktop-name {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: calc(100% - 120px);
+    color: white;
+    font-size: 18px;
+    line-height: 1.35;
+    text-align: center;
+    pointer-events: none;
+}
+
 .learning-about-linux .reveal ul ul {
     font-size: 1em;
     margin: 0.2em 0;

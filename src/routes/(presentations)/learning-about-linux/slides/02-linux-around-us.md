@@ -1,10 +1,28 @@
-## Where Linux is used
+## Linux is everywhere
 
-- Websites and online services
+- Servers
+    - Running much of the web and cloud infrastructure
 - Android phones and tablets
 - Everyday hardware
     - Routers, TVs, and some car infotainment systems
-- Same Linux core, different apps and interfaces
+
+---
+
+## What is a kernel?
+
+- The core of an operating system
+- Shares processor time and memory between running apps
+- Uses drivers to communicate with hardware
+- Gives apps a common way to use devices
+    - A text editor doesn't need special code for every keyboard model
+
+---
+
+## Open source
+
+- The source code is available for people to read
+- People can modify it and share their changes
+- Improvements can benefit everyone who uses it
 
 ---
 
@@ -15,19 +33,18 @@
 </figure>
 
 - Started by Linus Torvalds in 1991
-    - A kernel for his own PC
-- Developers joined in from around the world
-    - GNU tools helped turn it into a usable system
-- Adopted the GNU General Public License in 1992
+- Began as a project for his own PC
+- He shared it online, and other developers joined in
+- Their work grew into the Linux used today
 
 ---
 
-## Kernel development
+## The Linux Kernel Today
 
 - Thousands of contributors
-    - 2,057 developers worked on Linux 6.16 in 2025
-- Companies pay engineers to work on Linux
-    - Intel and AMD: hardware support and drivers
-    - Red Hat: kernel features, fixes, and maintenance
-- New mainline release roughly every nine to ten weeks
-- Ongoing bug fixes, security updates, and hardware support
+    - 2,057 developers on a single release in 2025
+- Microsoft and Google employ Linux developers
+    - Microsoft: support for its Azure cloud servers
+    - Google: Android, security, and bug-finding tools
+- Intel, AMD, and Red Hat also contribute engineers
+    - Hardware support, fixes, and long-term maintenance
