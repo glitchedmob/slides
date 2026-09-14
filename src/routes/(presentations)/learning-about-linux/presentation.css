@@ -1,0 +1,135 @@
+.learning-about-linux.why-linux {
+    --r-main-font-size: 28px;
+}
+
+.learning-about-linux .reveal .slides section {
+    max-height: 90%;
+}
+
+.learning-about-linux .reveal .slides section:has(> h1) {
+    padding: 5.5rem 6rem 5rem;
+}
+
+.learning-about-linux .reveal h1 {
+    font-size: 76px;
+}
+
+.learning-about-linux .reveal h2 {
+    font-size: 44px;
+    line-height: 1.15;
+}
+
+.learning-about-linux .reveal li {
+    font-size: 1em;
+    line-height: 1.35;
+    margin: 0.4em 0;
+}
+
+.learning-about-linux .reveal ul {
+    padding-left: 1em;
+}
+
+.learning-about-linux .reveal .slides section:has(> .portrait),
+.learning-about-linux .reveal .slides section:has(> .hardware-photo) {
+    width: 1000px !important;
+}
+
+.learning-about-linux .reveal .portrait {
+    float: right;
+    width: 260px;
+    margin: 0 0 0 28px;
+}
+
+.learning-about-linux .reveal .portrait img,
+.learning-about-linux .reveal .hardware-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.learning-about-linux .reveal .slides section:has(> .portrait) > ul {
+    display: block;
+    margin-right: 288px;
+}
+
+.learning-about-linux .reveal .hardware-photo {
+    float: right;
+    width: 400px;
+    margin: 0.6em 0 0 28px;
+    text-align: center;
+}
+
+.learning-about-linux .reveal .hardware-photo figcaption {
+    margin-top: 0.6em;
+    font-size: 20px;
+}
+
+.learning-about-linux .reveal .slides section:has(> .hardware-photo) > ul {
+    display: block;
+    margin-right: 428px;
+}
+
+.learning-about-linux .reveal .distribution-tree {
+    width: 900px;
+    max-width: 100%;
+    margin: 0.6em 0 0;
+}
+
+.learning-about-linux .reveal .distribution-tree img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+    margin: 0;
+}
+
+.learning-about-linux .reveal [data-desktop-gallery] {
+    display: block;
+    margin-top: 1em;
+    padding: 0.55em 0.9em;
+    border: 1px solid var(--mint-accent);
+    border-radius: 6px;
+    background: var(--mint-accent);
+    color: var(--mint-bg-deep);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.learning-about-linux .reveal [data-desktop-gallery]:hover {
+    background: #a2dc73;
+}
+
+.learning-about-linux .reveal [data-desktop-gallery]:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+.linux-desktop-gallery {
+    --pswp-bg: #08090b;
+    font-family: 'Ubuntu', 'Noto Sans', sans-serif;
+}
+
+.linux-desktop-gallery .pswp__desktop-name {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: calc(100% - 120px);
+    color: white;
+    font-size: 18px;
+    line-height: 1.35;
+    text-align: center;
+    pointer-events: none;
+}
+
+.learning-about-linux .reveal ul ul {
+    font-size: 1em;
+    margin: 0.2em 0;
+    padding-left: 1em;
+}

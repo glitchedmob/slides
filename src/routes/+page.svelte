@@ -7,8 +7,18 @@
     import datacenter from './(presentations)/house-datacenter/presentation';
     import linux from './(presentations)/why-linux/presentation';
     import firstDevJob from './(presentations)/how-to-land-your-first-dev-job/presentation';
+    import learningAboutLinux from './(presentations)/learning-about-linux/presentation';
 
-    const presentations = [dotnet, meadow, virtualServers, gettingThingsDone, datacenter, linux, firstDevJob];
+    const presentations = [
+        dotnet,
+        meadow,
+        virtualServers,
+        gettingThingsDone,
+        datacenter,
+        linux,
+        firstDevJob,
+        learningAboutLinux,
+    ];
 </script>
 
 <svelte:head>
