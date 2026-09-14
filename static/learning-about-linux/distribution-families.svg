@@ -1,0 +1,60 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="940"
+    height="310"
+    viewBox="0 0 940 310"
+    role="img"
+    aria-labelledby="title description"
+>
+    <title id="title">A few Linux distribution families</title>
+    <desc id="description">
+        Debian is the base for Ubuntu, and Ubuntu is the base for mainstream Linux Mint. Kubuntu is an official Ubuntu
+        flavor. Fedora, Arch, and Slackware are other distribution families. This is a simplified overview, not a
+        complete history.
+    </desc>
+    <defs>
+        <marker id="base-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+            <path d="M0 0 L8 4 L0 8 Z" fill="#86c84c" />
+        </marker>
+        <marker id="flavor-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+            <path d="M0 0 L8 4 L0 8 Z" fill="#b9bcc6" />
+        </marker>
+    </defs>
+    <g fill="#232427" stroke="#86c84c" stroke-width="2">
+        <rect x="40" y="12" width="205" height="48" rx="8" />
+        <rect x="40" y="108" width="205" height="48" rx="8" />
+        <rect x="20" y="234" width="225" height="48" rx="8" />
+        <rect x="305" y="234" width="205" height="48" rx="8" stroke="#b9bcc6" />
+        <rect x="640" y="48" width="220" height="48" rx="8" />
+        <rect x="640" y="132" width="220" height="48" rx="8" />
+        <rect x="640" y="216" width="220" height="48" rx="8" />
+    </g>
+    <g fill="none" stroke="#86c84c" stroke-width="2.5" marker-end="url(#base-arrow)">
+        <path d="M142 60 V104" />
+        <path d="M132 156 V229" />
+    </g>
+    <path
+        d="M245 132 H408 V229"
+        fill="none"
+        stroke="#b9bcc6"
+        stroke-width="2.5"
+        stroke-dasharray="7 5"
+        marker-end="url(#flavor-arrow)"
+    />
+    <g font-family="Ubuntu, Noto Sans, sans-serif" font-size="23" fill="#e8e9ee" text-anchor="middle">
+        <text x="142" y="44">Debian</text>
+        <text x="142" y="140">Ubuntu</text>
+        <text x="132" y="266">Linux Mint</text>
+        <text x="408" y="266">Kubuntu</text>
+        <text x="750" y="80">Fedora</text>
+        <text x="750" y="164">Arch</text>
+        <text x="750" y="248">Slackware</text>
+    </g>
+    <g font-family="Noto Sans, sans-serif" font-size="17" fill="#b9bcc6">
+        <text x="165" y="88">based on Debian</text>
+        <text x="150" y="195">based on Ubuntu</text>
+        <text x="430" y="196">Ubuntu flavor</text>
+        <text x="670" y="24">Other families</text>
+        <text x="20" y="308">Mint here is the Ubuntu-based edition. LMDE is based directly on Debian.</text>
+    </g>
+</svg>
