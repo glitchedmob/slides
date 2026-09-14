@@ -1,7 +1,4 @@
 # Demo steps
-
-Presenter only. All demos happen at the title-only **Demo** slide, after the explanations and USB overview. The audience does not need this checklist on screen. Return to **Questions** when finished, then invite people to try the demo computers with volunteers.
-
 Slide: Demo
 
 Have Ubuntu, Kubuntu, Linux Mint Cinnamon, and Windows 11 VMs ready on the presenter's Linux computer. Use sample files and demo accounts. Download the ISO, an AppImage, and any other installers before the talk.
@@ -41,21 +38,3 @@ Skip these if time is short. Keep them in the demo block rather than interruptin
 7. Open the browser, files, and settings. On physical hardware, briefly show Wi-Fi, sound, or the webcam.
 8. Point out the installer without starting an installation. Explain that backups matter before changing an existing installation and that a live session can still access internal drives.
 9. Show Mint's installation guide. Return to Questions, then hand over to the volunteers and demo computers.
-
-## Background for audience questions
-
-These links are for the presenter, not audience slides.
-
-- Microsoft contributes Linux drivers and cloud support upstream: https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-upload-generic
-- Google's kernel work includes security and automated bug-finding: https://security.googleblog.com/2021/08/linux-kernel-security-done-right.html
-- Framework Laptop 13 Pro has an Ubuntu-preinstalled option: https://frame.work/laptop13pro
-- Selected ThinkPads have Linux preload configurations: https://support.lenovo.com/us/en/solutions/pd031426-linux-for-personal-systems
-- Ubuntu's home-desktop antivirus guidance: https://help.ubuntu.com/stable/ubuntu-help/net-antivirus.html.en
-- ClamAV is a file scanner, not a drop-in equivalent to all of Defender's protection: https://docs.clamav.net/
-- Mint says it does not collect user data: https://linuxmint.com/
-- Windows required and optional diagnostics: https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319
-- NVIDIA's documented display limitations are more specific than saying all NVIDIA cards work badly: https://download.nvidia.com/XFree86/Linux-x86_64/580.126.09/README/wayland-issues.html
-- Widevine is Google's DRM technology, used across many services. Widevine itself is royalty-free; Linux streaming limits are not simply unpaid codec license fees: https://developers.google.com/widevine/drm/overview
-- Netflix currently lists up to 1080p for supported Linux browsers: https://help.netflix.com/en/node/30081
-- Ubuntu's standard LTS security coverage is five years for the Main repository, not every third-party app: https://ubuntu.com/security
-- Mint 22.3 is supported through 2029: https://www.linuxmint.com/rel_zena.php
